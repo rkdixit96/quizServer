@@ -1,10 +1,10 @@
 const server = require('../server');
 
-describe('Post user testing', () => {
-  test('Responds with 200 for successful post request', (done) => {
+describe('Post questions testing', () => {
+  test('Responds with 200 for post questions', (done) => {
     const options = {
       method: 'POST',
-      url: '/users',
+      url: '/questions',
     };
     server.inject(options, (response) => {
       expect(response.statusCode).toBe(200);

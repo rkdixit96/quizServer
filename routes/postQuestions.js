@@ -1,9 +1,9 @@
 module.exports = [{
   method: 'POST',
-  path: '/users',
+  path: '/questions',
   handler: (request, response) => {
     response({
-      message: 'Added or already exists',
+      message: 'Added questions to database',
     });
   },
 }];
