@@ -1,3 +1,5 @@
+const helpers = require('../helpers');
+
 module.exports = [{
   method: 'POST',
   path: '/questions',
