@@ -8,4 +8,12 @@ describe('Testing helpers', () => {
     });
     done();
   });
+  test('Adds answer to questions', (done) => {
+    helpers.combineDataFromURLs('https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/allQuestions', 'https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/findAnswerById').then((data) => {
+      data.forEach((element) => {
+        expect(element).toHaveProperty('answer');
+      }, this);
+      done();
+    });
+  });
 });
