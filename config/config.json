@@ -9,7 +9,7 @@
   "test": {
     "username": "krishnardixit",
     "password": null,
-    "database": "quizdb_test",
+    "database": "quizdb_dev",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
